@@ -44,6 +44,24 @@ class TodoApp extends React.Component {
             </div>
         )
     }
+    componentWillMount() {
+        console.log('componentWillMount');
+    }
+    componentDidMount() {
+        console.log('componentDidMount');
+    }
+    componentWillReceiveProps() {
+        console.log('componentWillReceiveProps');
+    }
+    componentWillUpdate() {
+        console.log('componentWillUpdate');
+    }
+    componentDidUpdate() {
+        console.log('componentDidUpdate');
+    }
+    componentWillUnmount() {
+        console.log('componentWillUnmount');
+    }
 }
 
 ReactDOM.render(<TodoApp />, document.getElementById('root'));
