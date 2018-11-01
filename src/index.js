@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
+//Functional Component(單純render UI stateless components)
 const TodoList = (props) => (
     <ul>
         {
@@ -11,7 +12,7 @@ const TodoList = (props) => (
         }
     </ul>
 )
-//主要元件
+//Class Component(可進行較複雜的操作和元件生命週期的控制)
 class TodoApp extends React.Component {
     constructor(props) {
       super(props);
